@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade } from '@material-ui/core/styles/colorManipulator';
 import { withStyles } from '@material-ui/core/styles';
@@ -15,12 +14,12 @@ import bgBay from '../../images/bg-bay.jpg';
 const styles = theme => ({
     root: {
         width: '100%',
-        height: "100px"
+        borderBottom: "1px solid #fff"
     },
     AppBarRoot: {
         // background: '',
         padding: '20px 10px 20px 10px',
-        backgroundImage: `radial-gradient(ellipse at top, transparent, #000000), url(${bgBay})`,
+        backgroundImage: `radial-gradient(ellipse at top,transparent,rgba(10,2,99,.8) 30%, rgba(0,0,39,1)), url(${bgBay})`,
         backgroundSize: 'cover'
 
     },
